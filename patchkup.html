@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/patchkup_style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="logo inliner">
+        <img src="pics/logo.png" class="inliner" />
+        <span class="name inliner"> imediko </span>
+        <div class="breadcrumbs">&nbsp;&nbsp;</div>
+      </div>
+      <div class="menuToggle inliner go-right onlyphone">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="menu inliner go-right onlypc invisible">
+        <nav>
+          <a href="Dashboard.html" title="Home"
+            ><div class="menu-btn inliner active">Home</div></a
+          >
+
+          <a href="patreg.html" title="Registration"
+            ><div class="menu-btn inliner">Registration</div></a
+          >
+          <a href="appoinment.html" title="Appointment"
+            ><div class="menu-btn inliner">Appointment</div></a
+          >
+
+          <a href="diagnosis.html" title="Diagnosis"
+            ><div class="menu-btn inliner">Diagnosis</div></a
+          >
+
+          <a href="index.html" title="logout"
+            ><div class="menu-btn inliner">logout</div></a
+          >
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- --------------------------------------main container------------------------------------------------------------------------>
+    <div class="container">
+      <h1>General Examination Details</h1>
+      <form action="#">
+        <div class="row1 row">
+          <div class="col">
+            <div class="date">
+              <label for="date">Date</label>
+              <input
+                type="date"
+                id="date_ip"
+                name="firstname"
+                placeholder="Patient Id"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="time">
+              <label for="time">Time</label>
+              <input
+                type="time"
+                id="time_ip"
+                name="lastname"
+                placeholder="Patient Email"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row2 row">
+          <div class="col">
+            <label for="pulse">Pulse:</label>
+            <input type="text" id="pulse" name="" /> <b>/min</b>
+          </div>
+          <div class="col">
+            <label for="lname">Blood Pressure:</label>
+            <input type="text" id="lname" name="lastname" /><b>mm of hg</b>
+          </div>
+          <div class="col">
+            <label for="lname">Tempareture:</label>
+            <input type="text" id="lname" name="lastname" /><b>&degF</b>
+          </div>
+        </div>
+        <div class="row3 row">
+          <div class="col">
+            <label for="icterus">Icterus:</label>
+            <select id="icterus_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF ICTERUS
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="anaemia">Anaemia:</label>
+            <select id="anaemia_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF ANAEMIA
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="cyanosis">Cyanosis:</label>
+            <select id="cyanosis_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF CYANOSIS
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row3 row">
+          <div class="col">
+            <label for="juqular_vain_plus">Juqular Vain Plus:</label>
+            <input type="text" id="j_v_p" name="juqular_vain_plus" /><b>/min</b>
+          </div>
+          <div class="col">
+            <label for="tonque">Tonque:</label>
+            <select id="tonque_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF TONQUE
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row3 row">
+          <div class="col">
+            <label for="pharynx">Pharynx:</label>
+
+            <select id="pharynx_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF PHARYNX
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="tonsils">Tonsils:</label>
+
+            <select id="tonsils_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF TONSILS
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="oedema">Oedema:</label>
+
+            <select id="oedema_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF OEDEMA
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row3 row">
+          <div class="col">
+            <label for="clubbing">Clubbing:</label>
+
+            <select id="clubbing_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF CLUBBING
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="blood_group">Blood Group:</label>
+            <select id="blood_group_s">
+              <!--
+          --------------------------------------------
+          CHANGE VALUE OF BLOOD GROUP
+          ------------------------------------------
+          -->
+              <option selected value="">Nil</option>
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="ab">AB</option>
+              <option value="o">O</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="rh_factor">RH Factor:</label>
+            <select id="icterus_s">
+              <option selected value="">Nil</option>
+              <option value="+">Positive</option>
+              <option value="-">Negative</option>
+            </select>
+          </div>
+        </div>
+        <div class="row3 row">
+          <div class="col">
+            <label for="l_nodes">Lymph Node:</label>
+            <select
+              style="@media (max-width: 1060px) {width: 5vw}"
+              id="l_nodes"
+            >
+              <option selected value="nil">Nil</option>
+              <option value="Neck">Neck</option>
+              <option value="Axilla">Axilla</option>
+              <option value="Groin">Groin</option>
+            </select>
+            <select
+              style="@media (max-width: 1060px) {width: 5vw}"
+              id="l_node_type"
+            >
+              <option selected value="nil">Nil</option>
+              <option value="Palpable">Palpable</option>
+              <option value="Not palpable">Not Palpable</option>
+            </select>
+            <div id="go">GO</div>
+          </div>
+          <div
+            style="width: 60%; @media (max-width: 1060px) {width: 100%}"
+            class="col"
+          >
+            <textarea name="" id="text_area" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="row5 row">
+          <div class="col">
+            <label for="past_history">Past History:</label>
+            <input type="text" class="past" name="lastname" />
+          </div>
+        </div>
+        <div class="row5 row">
+          <div class="col">
+            <label for="past_history">Drag Alergy:</label>
+            <input type="text" class="past" name="lastname" />
+          </div>
+        </div>
+        <div class="row5 row">
+          <div class="col">
+            <label for="past_history">Other Alergy:</label>
+            <input type="text" class="past" name="lastname" />
+          </div>
+        </div>
+        <div class="row5 row">
+          <div class="col">
+            <label for="any_other">Any Other Info:</label>
+            <input type="text" class="past" name="lastname" />
+          </div>
+        </div>
+
+        <input class="submit_btn" type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+  <script src="./JS/geDetails.js"></script>
+  <script src="https://use.fontawesome.com/742ca76364.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //=====navigation
+      $(".menuToggle").click(function () {
+        var menu = $(".menu");
+        if (menu.hasClass("invisible")) {
+          $(".menuToggle i").toggleClass("fa-bars fa-times");
+          $(".menu").removeClass("invisible");
+          $(".menu").addClass("visible");
+          menu.show("slow");
+        }
+      });
+      $(document).mouseup(function (e) {
+        var menu = $(".menu");
+        if (!menu.is(e.target) && menu.has(e.target).length === 0) {
+          if (menu.hasClass("visible")) {
+            setTimeout(function () {
+              $(".menuToggle i").toggleClass("fa-times fa-bars");
+              $(".menu").removeClass("visible");
+              $(".menu").addClass("invisible");
+            }, 500);
+            menu.hide("slow");
+          }
+        }
+      });
+
+      //=====radindrops
+    });
+  </script>
+</html>

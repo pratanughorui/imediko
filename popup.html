@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="main" id="blur">
+      <div class="hed">
+        <h1>Food List</h1>
+        <div class="add">
+          <button class="button button2" onclick="toggle()">add</button>
+        </div>
+      </div>
+      <div class="food_box">
+        <table id="customers">
+          <tr>
+            <th>Food</th>
+            <th>Details</th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <a href="food_details.php?id=<?php echo $result['id'];?>">
+                <button class="button1" style="vertical-align: middle">
+                  <span>About</span>
+                </button></a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="popup">
+      <div class="hed_name">
+        <h2>Add Food</h2>
+        <button onclick="toggle()" class="button button2">Close</button>
+      </div>
+      <div class="add_food">
+        <form method="post" action="food_add.php" enctype="multipart/form-data">
+          <input type="text" name="foodname" placeholder="Food name" /><br />
+          <textarea
+            name="ingredients"
+            id=""
+            placeholder="ingredients"
+          ></textarea
+          ><br />
+          <textarea name="recipe" id="" placeholder="recipe"></textarea><br />
+          <input type="file" name="photo" />
+          <input type="submit" name="submit" class="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/4334081fd1.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function toggle() {
+      var blur = document.getElementById("blur");
+      blur.classList.toggle("active");
+      var popup = document.getElementById("popup");
+      popup.classList.toggle("active");
+    }
+  </script>
+</html>

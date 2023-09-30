@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/patreg_style.css">
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="logo inliner">
+        <img src="pics/logo.png" class="inliner" />
+        <span class="name inliner"> imediko </span>
+        <div class="breadcrumbs">&nbsp;&nbsp;</div>
+      </div>
+      <div class="menuToggle inliner go-right onlyphone">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="menu inliner go-right onlypc invisible">
+        <nav>
+          <a href="Dashboard.html" title="Home"
+            ><div class="menu-btn inliner active">Home</div></a
+          >
+
+          <a href="patreg.html" title="Registration"
+            ><div class="menu-btn inliner">Registration</div></a
+          >
+          <a href="appoinment.html" title="Appointment"
+            ><div class="menu-btn inliner">Appointment</div></a
+          >
+
+          <a href="diagnosis.html" title="Diagnosis"
+            ><div class="menu-btn inliner">Diagnosis</div></a
+          >
+
+          <!-- <a href="blog" title="Blog"
+            ><div class="menu-btn inliner">Prescription</div></a
+          > -->
+
+          <a href="index.html" title="logout"
+            ><div class="menu-btn inliner">logout</div></a
+          >
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!--------------------------- main container----------------------------------------------------------->
+
+    <div class="container">
+      <h1 style="border-radius: 4px;">ODP Patient Registration</h1>
+
+      <form action="data_patreg.php" method="post">
+        <div class="row1 row">
+          <label for="fname"><span style="color: red;">*</span>Patient Id:</label>
+          <input type="text" id="fname" name="patient_id" value="123400001" disabled/>
+
+          <label for="lname"><span style="color: red;">*</span>Patient Email: </label>
+          <input
+            type="email"
+            id="lname"
+            name="patient_email"
+           
+          />
+          <label for="fname"><span style="color: red;">*</span>Contact No:</label>
+          <input
+            type="text"
+            id="fname"
+            name="patient_contact"
+           
+          />
+
+          <!-- <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+        </div>
+        <div class="row2 row">
+          <label for="fname"><span style="color: red;">*</span>Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="patient_name"
+           
+          />
+
+          <label for="lname">Gurdain Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="gurdian_name"
+       
+          />
+        </div>
+        <div class="row3 row">
+          <label for="lname"><span style="color: red;">*</span>DOB:</label>
+          <input type="date" id="dob" name="dob"  />
+          <label for="lname"><span style="color: red;">*</span>Age:</label>
+          <input type="number" id="age" name="age"  />
+          <label for="country"><span style="color: red;">*</span>Gender:</label>
+          <select id="gender" name="sex">
+            <option selected></option>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+          <label for="lname">Occupation</label>
+          <input
+            type="text"
+            id="lname"
+            name="occupation"
+          
+          />
+        </div>
+        <div class="row4 row">
+          <label for="country">Maritial Status</label>
+          <select id="gender" name="maritial_status">
+            <option selected>------Nil------</option>
+            <option value="male">Single</option>
+            <option value="Female">Married</option>
+          </select>
+          <label for="lname">Spouse's Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="spouse_name"
+         
+          />
+          <label for="lname">Monthly Income</label>
+          <input
+            type="text"
+            id="lname"
+            name="income"
+      
+          />
+        </div>
+        <div class="row5 row">
+          <label for="lname">Current Address</label>
+          <input
+            type="text"
+            id="ca"
+            name="cadd"
+  
+          />
+          <label for="lname">City</label>
+          <input type="text" id="city" name="ccity"  />
+          <label for="lname">Pin</label>
+          <input type="text" id="cpin" name="cpin" />
+          <label for="lname">District</label>
+          <input
+            type="text"
+            id="cdis"
+            name="cdistrict"
+         
+          />
+          <label for="lname">State</label>
+          <input type="text" id="cstate" name="cstate" />
+          <label for="lname">Police Station</label>
+          <input type="text" id="cps" name="cps"  />
+        </div>
+        <div class="row5 row">
+          <label for="same">Same As</label>
+          <input type="checkbox" name="sameas" value="0" id="same" />
+        </div>
+        <div class="row5 row">
+          <label for="lname">Permanent Address</label>
+          <input
+            type="text"
+            id="pa"
+            name="padd"
+          
+          />
+          <label for="lname">City</label>
+          <input type="text" id="pcity" name="pcity"  />
+          <label for="lname">Pin</label>
+          <input type="text" id="ppin" name="ppin" />
+          <label for="lname">District</label>
+          <input type="text" id="pdis" name="pdis" />
+          <label for="lname">State</label>
+          <input type="text" id="pstate" name="pstate"/>
+          <label for="lname">Police Station</label>
+          <input type="text" id="pps" name="pps"  />
+        </div>
+
+        <input type="submit" name="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+  <script src="https://use.fontawesome.com/742ca76364.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //=====navigation
+      $(".menuToggle").click(function () {
+        var menu = $(".menu");
+        if (menu.hasClass("invisible")) {
+          $(".menuToggle i").toggleClass("fa-bars fa-times");
+          $(".menu").removeClass("invisible");
+          $(".menu").addClass("visible");
+          menu.show("slow");
+        }
+      });
+      $(document).mouseup(function (e) {
+        var menu = $(".menu");
+        if (!menu.is(e.target) && menu.has(e.target).length === 0) {
+          if (menu.hasClass("visible")) {
+            setTimeout(function () {
+              $(".menuToggle i").toggleClass("fa-times fa-bars");
+              $(".menu").removeClass("visible");
+              $(".menu").addClass("invisible");
+            }, 500);
+            menu.hide("slow");
+          }
+        }
+      });
+
+      //=====radindrops
+    });
+    function calculateAge(dateOfBirth) {
+      // Parse the date of birth string to a Date object
+      const birthDate = new Date(dateOfBirth);
+
+      // Get the current date
+      const currentDate = new Date();
+
+      // Calculate the age
+      let age = currentDate.getFullYear() - birthDate.getFullYear();
+
+      // Check if the birthday has already occurred this year
+      const birthMonth = birthDate.getMonth();
+      const currentMonth = currentDate.getMonth();
+      const birthDay = birthDate.getDate();
+      const currentDay = currentDate.getDate();
+
+      if (
+        currentMonth < birthMonth ||
+        (currentMonth === birthMonth && currentDay < birthDay)
+      ) {
+        // If the birthday hasn't occurred yet this year, subtract 1 from the age
+        age--;
+      }
+
+      return age;
+    }
+
+    // Example usage:
+    // const dateOfBirth = "2000-04-17"; // Date format: "YYYY-MM-DD"
+
+    //console.log(age); // Output: (depends on the current date) e.g., 33
+    const dob = document.getElementById("dob");
+    const age = document.getElementById("age");
+    dob.addEventListener("input", function () {
+      const value = dob.value;
+      const a = calculateAge(value);
+      age.value = a;
+    });
+    const same = document.getElementById("same");
+    same.addEventListener("click", () => {
+      if (same.value == 0) {
+        same.value = 1;
+      } else {
+        same.value = 0;
+      }
+      if (same.value == 1) {
+        const ca = document.getElementById("ca").value;
+        const city = document.getElementById("city").value;
+        const cpin = document.getElementById("cpin").value;
+        const cdis = document.getElementById("cdis").value;
+        const cstate = document.getElementById("cstate").value;
+        const cps = document.getElementById("cps").value;
+        document.getElementById("pa").value = ca;
+        document.getElementById("pcity").value = city;
+        document.getElementById("ppin").value = cpin;
+        document.getElementById("pdis").value = cdis;
+        document.getElementById("pstate").value = cstate;
+        document.getElementById("pps").value = cps;
+      } else {
+        document.getElementById("pa").value = "";
+        document.getElementById("pcity").value = "";
+        document.getElementById("ppin").value = "";
+        document.getElementById("pdis").value = "";
+        document.getElementById("pstate").value = "";
+        document.getElementById("pps").value = "";
+      }
+      // if(same.checked){
+      //   console.log("clicked");
+      //   const ca=document.getElementById("ca").value;
+      //   const city=document.getElementById("city").value;
+      //   const cpin=document.getElementById("cpin").value;
+      //   const cdis=document.getElementById("cdis").value;
+      //   const cstate=document.getElementById("cstate").value;
+      //   const cps=document.getElementById("cps").value;
+      //   document.getElementById("pa").value=ca;
+      // }else{
+      //   document.getElementById("ca").value="";
+      // }
+    });
+  </script>
+</html>

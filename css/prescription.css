@@ -1,0 +1,109 @@
+/* * {
+} */
+html {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  margin-top: 50px;
+  width: 785px;
+  height: 1060px;
+  display: flex;
+}
+.left {
+  width: 30%;
+  height: 1000px;
+  border-right: 1px solid black;
+}
+.right {
+  width: 70%;
+  position: absolute;
+  top: 39;
+  left: 32%;
+  height: 1000px;
+}
+.heading_left {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.page .left .row {
+  margin-top: 4%;
+  width: 100%;
+  height: fit-content;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.page .left .row .col {
+  margin: 10px 5px;
+  width: auto;
+}
+.page .left .row .col,
+label,
+b {
+  padding-left: 1px;
+}
+
+.textadj {
+  padding-left: 0;
+}
+.right .row1 {
+  display: flex;
+}
+table {
+  margin-top: 10px;
+  width: 98%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+.page .right .row h2 {
+  margin-left: 10px;
+}
+.medicine {
+  margin-top: 50px;
+  height: 400px;
+}
+.medicine th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.row3 {
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+}
+.row3 .point {
+  width: 20%;
+  height: 90px;
+  font-weight: 600;
+}
+.row3 .point p {
+  margin: 0;
+}
+.row3 .para {
+  width: 75%;
+  height: 90px;
+}
+.row4 {
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+}
+.row4 .point {
+  font-weight: 600;
+  width: 20%;
+  height: 90px;
+}
+.row4 .point p {
+  margin: 0;
+}
+.row4 .para {
+  width: 75%;
+  height: 90px;
+}
