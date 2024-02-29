@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--trans: all .3s linear;
+}
+html{
+	font-size: 62.5%; 
+/* 	font-family: 'Anton', sans-serif; */
+/* 	font-family: 'Kaushan Script', cursive; */
+/* 	font-family: 'Poppins', sans-serif; */
+/* 	font-family: 'Righteous', cursive; */
+	font-family: 'Roboto', sans-serif;
+/* 	font-family: 'Shadows Into Light', cursive; */
+	color: #111;
+/* 	-webkit-touch-callout: none; */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* body{overflow-x: hidden;} */
+h1{
+	font-family: 'Righteous', cursive;
+	font-size: 8rem;
+}
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+}
+/* .mainherodiv{
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: relative; overflow: hidden;
+}
+.mainherodiv::before{
+	content: 'form';
+	background-image: url('../pics/bg-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	position: absolute; 
+	inset: 0; 
+	opacity: .2;
+} */
+.mainherodiv{
+	height: 100vh;
+/* 	width: 100vw; */
+	justify-content: center;
+	align-items: center;
+/* 	position: absolute;  */
+	overflow: hidden !important;
+
+	background-image: url('../pics/new_bg-2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+.navbar{
+	background-color: rgba(1, 1, 1, .3);
+	border-radius: 2rem;
+	padding: .2rem 3.5rem;
+}
+.txtlogo{
+	font-family: 'Anton', sans-serif;
+	color: #DAF7A6 ;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	text-transform: capitalize;
+	text-shadow: .3rem .3rem .6rem #111; 
+	transition: 100ms ease-in-out;
+}
+.txtlogo:hover{
+	color: #080DB0;
+	text-shadow: .3rem .3rem .7rem #fff;
+}
+.reg{
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: .5rem 2rem;
+	border: .1rem solid #DAF7A6;
+	border-radius: 1rem;
+	color: #DAF7A6;
+	position: relative;
+	transition: var(--trans);
+	z-index: 1;
+	overflow: hidden;
+}
+.reg::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: #080DB0;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	transform: translateX(-100%);
+	transition: var(--trans);
+}
+.reg:hover:before{
+	transform: translateX(0);
+	z-index: -1;
+}
+.reg:hover{
+	color: #fff;
+	text-transform: uppercase;
+}
+.herorow{
+	height: 100vh;
+	width: 100vw;
+}
+.leftrow{
+	margin-top: 20%;
+	margin-left: 5%;
+}
+.left1strow{	
+}
+.img1{
+	height: 12rem;
+}
+.imediko h1{
+	font-size: 9.5rem;color: red;
+	text-shadow: .2rem .2rem .2rem rgba(1,1,1,.3);
+}
+.doctor h1{
+	font-family: 'Kaushan Script', cursive;
+}
+.formrow{
+	margin-top: 20%;
+	margin-right: 5%;
+}
+.login{
+	border: .05rem solid #111;
+	border-radius: 1rem;
+	padding: 5rem 2rem;
+}
+.login .form-group{
+	padding: 1rem 0;
+}
+.login .form-group input{
+/* 	height: 4rem; */
+}
+.login .form-group .form-control{
+	border-radius: .5rem;
+	font-size: 1.5rem; color: #111;
+}
+.login .form-group label{
+	font-family: 'Poppins', sans-serif; 
+	font-size: 1.4rem;
+}
+.login .form-group .form-text{
+	font-family: 'Poppins', sans-serif; 
+	font-size: 1rem;
+}
+.login button{
+	margin-top: 1rem;
+	font-family: 'Poppins', sans-serif; 
+	font-size: 1.5rem;
+	border-radius: .5rem; border: none;
+}
+.signin{
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: .5rem;
+	border: none;
+	border-radius: 1rem;
+	color: #111;
+	position: relative;
+	transition: var(--trans);
+	z-index: 1;
+	overflow: hidden;
+
+}
+.signin::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: #080DB0;
+	width: 100%;
+	height: 100%;
+
+	transform: translateX(-100.9%);
+	transition: var(--trans);
+}
+.signin:hover:before{
+	transform: translateX(0);
+	z-index: -1;
+}
+.signin:hover{
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: rgba(50, 50, 93, 0.25) 0 1.3rem 2.7rem -.5rem, rgba(0, 0, 0, 1) 0 .8rem 1.6rem -.8rem;
+}
+
+
+
+@media(max-width: 998px){
+	html{
+		font-size: 55%;
+	}
+}
+@media(max-width: 768px){
+	html{
+		font-size: 45%;
+	}
+}

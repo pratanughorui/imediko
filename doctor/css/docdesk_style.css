@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--trans: all .3s linear;
+}
+html{
+	font-size: 62.5%;
+/* 	font-family: 'Anton', sans-serif; */
+/* 	font-family: 'Kaushan Script', cursive; */
+/* 	font-family: 'Poppins', sans-serif; */
+/* 	font-family: 'Righteous', cursive; */
+	font-family: 'Roboto', sans-serif;
+/* 	font-family: 'Shadows Into Light', cursive; */
+	color: #111;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+h1{
+	font-family: 'Righteous', cursive;
+	font-size: 8rem;
+}
+h3{
+	font-family: font-family: 'Righteous', cursive;
+	font-size: 4.5rem;
+	margin: 2rem 0;
+	text-decoration: underline;
+}
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+}
+.maindiv{
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 1.0), rgba(176, 173, 249, 1.0) );
+	border-radius: .5rem;
+	box-shadow: .2rem .3rem .2rem rgba(131, 131, 133,  .75);
+	margin-top: 1.5rem;
+	padding: 1.5rem;
+}
+.maindiv form span, .form-check-input, .form-control, label, .form-select, option, table{
+	font-size: 1.6rem;
+}
+.form-check .form-check-input{
+	margin-left: -0.5rem;margin-right: .5rem;
+	margin-top: 1rem;
+}
+.form-check-label{
+	margin: .5rem .3rem 0 .3rem;
+}
+.sub_btn{
+	font-size: 1.5rem;
+	border-radius: .5rem;
+	text-transform: uppercase;
+}
+
+
+
+
+@media(max-width: 998px){
+	html{
+		font-size: 55%;
+	}
+}
+@media(max-width: 768px){
+	html{
+		font-size: 45%;
+	}
+}

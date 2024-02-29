@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" oncontextmenu="return false">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ----------Font Awesome 6.3.0---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------------------ Google Fonts---------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Poppins:wght@500&family=Righteous&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- ------------------------ Bootstrap Datepicker--------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <link rel="stylesheet" href="./css/docdesk_style.css">
+    <title>iMediko</title>
+  </head>
+  <body>
+      <div class="text-center"><h3>Patient Diagnosis</h3></div>
+      <div class="container text-end">
+          <p>Date</p>
+          <p>Time</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <p>Doctor's Name</p>
+            </div>
+            <div class="col-4 text-end">
+              <p>Reg. No.</p>
+            </div>
+          </div>
+        </div>
+      <div class="container maindiv">
+        <form action="">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Patient ID</span>
+                <input type="text" class="form-control" placeholder="Patient ID" aria-label="pid" aria-describedby="addon-wrapping" readonly="">
+              </div>
+             </div>
+            
+            <div class="col-md-5">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Name</span>
+                <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping" readonly="true">
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Age</span>
+                <input type="text" class="form-control" placeholder="Age" aria-label="age" aria-describedby="addon-wrapping" readonly="true">
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Gender</span>
+                <input type="text" class="form-control" placeholder="Gender" aria-label="gender" aria-describedby="addon-wrapping" readonly="true">
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------ -->
+          <div class="row">
+            <div class="col-md-5">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Complain</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--select--</option>
+                  <option value="1">com 1</option>
+                  <option value="2">com 2</option>
+                  <option value="3">com 3</option>
+                  <option value="4">com 4</option>
+                  <option value="5">com 5</option>
+                  <option value="6">com 6</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="input-group flex-nowrap">
+                <!-- <span class="input-group-text" id="addon-wrapping">with</span> -->
+                <button type="button" class="btn btn-secondary">with ></button>
+                <input type="text" name="" value="" class="form-control"  placeholder="with" aria-label="with" aria-describedby="addon-wrapping">
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------- -->
+          <div class="row frmhead"><p>General Examinations</p></div>
+           <!-- ------------------------------------------------ -->
+          <div class="row">
+            <div class="col-md-5">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Provitional Diagnosis</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--select--</option>
+                  <option value="1">com 1</option>
+                  <option value="2">com 2</option>
+                  <option value="3">com 3</option>
+                  <option value="4">com 4</option>
+                  <option value="5">com 5</option>
+                  <option value="6">com 6</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="input-group flex-nowrap">
+                <!-- <span class="input-group-text" id="addon-wrapping">with</span> -->
+                <button type="button" class="btn btn-secondary">with ></button>
+                <input type="text" name="" value="" class="form-control"  placeholder="with" aria-label="with" aria-describedby="addon-wrapping">
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------- -->
+          <hr>
+          <!-- ----------------------------------------------- -->
+          <div class="row frmhead"><p>Investigation Advice</p></div>
+           <!-- ------------------------------------------------ -->
+           <div class="row">
+            <div class="col-md-5">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Sample</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--select--</option>
+                  <option value="1">com 1</option>
+                  <option value="2">com 2</option>
+                  <option value="3">com 3</option>
+                  <option value="4">com 4</option>
+                  <option value="5">com 5</option>
+                  <option value="6">com 6</option>
+                </select>
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">Test</span>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--select--</option>
+                    <option value="1">com 1</option>
+                    <option value="2">com 2</option>
+                    <option value="3">com 3</option>
+                    <option value="4">com 4</option>
+                    <option value="5">com 5</option>
+                    <option value="6">com 6</option>
+                  </select>
+                </div>
+            </div>
+
+
+            <div class="col-md-1">
+              <div class="input-group flex-nowrap form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cburgent">
+                <label class="form-check-label" for="cburgent">
+                   Urgent
+                </label>
+              </div>
+            </div>
+          </div>
+           <!-- ------------------------------------------------ -->
+           <div class="row">
+             <div class="col-12">
+               <table class="table">
+                <thead>
+                  <tr>
+                    <th>Sl. No.</th>
+                    <th>Sample Name</th>
+                    <th>Test Name</th>
+                    <th>Urgent</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Sample Name 1</td>
+                    <td>Test Name 1</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Sample Name 2</td>
+                    <td>Test Name 2</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Sample Name 3</td>
+                    <td>Test Name 3</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+             </div>
+           </div>
+          <!-- ----------------------------------------------- -->
+            <hr>
+          <!-- ----------------------------------------------- -->
+          <div class="row frmhead"><p>Medicine Advice</p></div>
+          <!-- ----------------------------------------------- -->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Name</span>
+                <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping" readonly="true">
+              </div> -->
+
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Type</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--select--</option>
+                  <option value="1">com 1</option>
+                  <option value="2">com 2</option>
+                  <option value="3">com 3</option>
+                  <option value="4">com 4</option>
+                  <option value="5">com 5</option>
+                  <option value="6">com 6</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Medicine</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--select--</option>
+                  <option value="1">com 1</option>
+                  <option value="2">com 2</option>
+                  <option value="3">com 3</option>
+                  <option value="4">com 4</option>
+                  <option value="5">com 5</option>
+                  <option value="6">com 6</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------- -->
+          <div class="row">
+            <div class="col-md-2">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Dose</span>
+                <input type="text" class="form-control" placeholder="Dose" aria-label="Dose" aria-describedby="addon-wrapping">
+              </div>
+            </div>
+            <!-- ***** -->
+            <div class="col-md-3">
+              <div class="input-group flex-nowrap">
+                <div class="d-flex justify-content-between radiodiv">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault1"  checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Once
+                    </label>
+                  </div>
+                  <!-- ------- -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Twice &nbsp
+                    </label>
+                  </div>
+                  <!-- ------- -->
+                </div>
+                <span class="input-group-text" id="addon-wrapping">/Days</span>
+              </div>
+            </div>            
+            <!-- ***** -->
+            <div class="col-md-4">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">At &nbsp&nbsp&nbsp</span>
+                <div class="d-flex justify-content-between radiodiv">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_2" id="flexRadioDefault1"  checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Before Nreakfast
+                    </label>
+                  </div>
+                  <!-- ------- -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_2" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Before Bed
+                    </label>
+                  </div>
+                  <!-- ------- -->
+                </div>
+              </div>
+            </div> 
+            <!-- ***** -->
+            <div class="col-md-3">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">For</span>
+                <input type="text" class="form-control" placeholder="for" aria-label="for" aria-describedby="addon-wrapping">
+                <span class="input-group-text" id="addon-wrapping">Days</span>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------ -->
+          <div class="row">
+             <div class="col-12">
+               <table class="table">
+                <thead>
+                  <tr>
+                    <th>Sl.</th>
+                    <th>Type</th>
+                    <th>Medicine</th>
+                    <th>Dose</th>
+                    <th>/Day</th>
+                    <th>Adm. At</th>
+                    <th>Till</th>
+                    <th>Discontinued</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Type 1</td>
+                    <td>Medicine 1</td>
+                    <td>Dose 1</td>
+                    <th>/Day 1</th>
+                    <td>Adm. At 1</td>
+                    <td>Till 1</td>
+                    <td>Discontinued 1</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Type 2</td>
+                    <td>Medicine 2</td>
+                    <td>Dose 2</td>
+                    <th>/Day 2</th>
+                    <td>Adm. At 2</td>
+                    <td>Till 2</td>
+                    <td>Discontinued 2</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Type 3</td>
+                    <td>Medicine 3</td>
+                    <td>Dose 3</td>
+                    <th>/Day 3</th>
+                    <td>Adm. At 3</td>
+                    <td>Till 3</td>
+                    <td>Discontinued 3</td>
+                  </tr>
+                </tbody>
+              </table>
+             </div>
+           </div>
+          <!-- ----------------------------------------------- -->
+          <div class="d-grid gap-2 col-12 mx-auto">
+            <button class="btn btn-primary sub_btn" type="button">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    
+    <!-- ================================================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+    $(function(){
+    $('#datepicker').datepicker({autoclose:true});
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+ <!-- <div class="col-md-3">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Patient ID</span>
+                <input type="text" class="form-control" placeholder="Patient ID" aria-label="pid" aria-describedby="addon-wrapping" readonly="">
+              </div>
+             </div> -->
+            
+            <!-- <div class="col-md-5">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Name</span>
+                <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping" readonly="true">
+              </div>
+            </div> -->
+            <!-- <div class="col-md-2">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Age</span>
+                <input type="text" class="form-control" placeholder="Age" aria-label="age" aria-describedby="addon-wrapping" readonly="true">
+              </div>
+            </div> -->
+            <!-- <div class="col-md-2">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Gender</span>
+                <input type="text" class="form-control" placeholder="Gender" aria-label="gender" aria-describedby="addon-wrapping" readonly="true">
+              </div>
+            </div>
+          </div> -->
+          <!-- ------------------------------------------------ -->
+          <!-- <div class="row">
+            <div class="col-md-5">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Complain</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--select--</option>
+                  <option value="1">com 1</option>
+                  <option value="2">com 2</option>
+                  <option value="3">com 3</option>
+                  <option value="4">com 4</option>
+                  <option value="5">com 5</option>
+                  <option value="6">com 6</option>
+                </select>
+              </div>
+            </div> -->
+            <!-- <div class="col-md-7">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">with</span>
+                <button type="button" class="btn btn-secondary">with ></button>
+                <textarea class="form-control" placeholder="with" aria-label="with" aria-describedby="addon-wrapping"></textarea>
+              </div>
+            </div>
+          </div> -->
+          <!-- ----------------------------------------------- -->
+
+           <!-- <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault1"  checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      option 1
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      option 2
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      option 3
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                      option 4
+                    </label>
+                  </div>
+                  
+                   <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault5">
+                    <label class="form-check-label" for="flexRadioDefault5">
+                      option 5
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault6">
+                    <label class="form-check-label" for="flexRadioDefault6">
+                      option 6
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault_1" id="flexRadioDefault7">
+                    <label class="form-check-label" for="flexRadioDefault7">
+                      option 7
+                    </label>
+                  </div> -->
+                  <div class="col-md-8">
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Pharynx" aria-describedby="addon-wrapping">
+              </div>
+            </div>
